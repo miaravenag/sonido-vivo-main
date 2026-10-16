@@ -1,0 +1,107 @@
+/* React monta la app dentro de #root: debe ocupar todo el alto para empujar el footer abajo */
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Styles - Sonido Vivo */
+:root {
+  --primary-color: #0d6efd;
+  --dark-bg: #121212;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+.product-card {
+  transition: transform 0.2s ease, shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.product-img {
+  height: 200px;
+  object-fit: contain;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.hero-banner {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: white;
+  padding: 4rem 1rem;
+  border-radius: 1rem;
+}
+
+.form-control, .form-select, .btn {
+  border-radius: 0.5rem;
+}
+
+.btn-warning {
+  background-color: #ffb049 !important; 
+  border-color: #000000 !important;
+  color: #2b2525 !important;
+}
+
+.btn-warning:hover {
+  background-color: #5a32a3 !important;
+  border-color: #5a32a3 !important;
+  color: #ffffff !important;
+}
+/* Cambia el color de la barra debajo de los títulos */
+.border-warning {
+  border-color: #6f42c1 !important;
+}
+
+/* Cambia el color del logo en la barra de navegación */
+.text-warning {
+  color: #c7a900 !important;
+}
+
+.hero-banner {
+  background: linear-gradient(135deg, #2563eb 0%, #1e1b4b 100%) !important;
+  border-radius: 1.25rem !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+/* Ocurre cuando pasas el ratón por encima de un producto */
+.product-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem !important;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Cambiar el fondo del contenedor de la imagen del producto */
+.product-img {
+  background-color: #f1f5f9 !important;
+}
+
+body {
+  background-color: #f8fafc !important; /* Gris ultra claro */
+}
+
+.table thead {
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+.table tbody tr {
+  vertical-align: middle;
+}
